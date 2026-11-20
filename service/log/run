@@ -1,0 +1,6 @@
+#!/bin/sh
+
+USER=pi
+
+exec setuidgid ${USER} multilog t n1024 s1048576 ./main
+

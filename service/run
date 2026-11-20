@@ -1,0 +1,10 @@
+#!/bin/sh
+
+USER=pi
+PATH=/home/${USER}/kairos/.venv/bin
+PATH=${PATH}:/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin:/root/bin
+
+exec 2>&1
+exec envuidgid ${USER} envdir /service/kairos/env python /home/${USER}/Kairos/src/kairos/controller.py
+
+
