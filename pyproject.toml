@@ -1,6 +1,6 @@
 [project]
 name = "kairos"
-version = "0.1.0"
+version = "0.2.0"
 # dynamic = ["version"]
 description = "Kairos - Sensor monitoring and Reporting"
 readme = "README.md"
